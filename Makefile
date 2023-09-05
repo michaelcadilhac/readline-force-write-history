@@ -5,5 +5,3 @@ LIB := $(patsubst %.c,%.so,$(SRC))
 	gcc -O3 -shared $< -o $@ -ldl -Wall -fPIC
 
 all: $(LIB)
-	echo $(LIB)
-
